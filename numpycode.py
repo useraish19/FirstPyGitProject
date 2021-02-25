@@ -74,3 +74,8 @@ print("a1 Transpose:", a1.transpose())
 a4 = np.array([[9, 8, 7], [6, 5, 4], [3, 2, 1]])
 print("a1.dot(a4):", a1.dot(a4))
 print("a4.dot(a1):", a4.dot(a1))
+
+
+np.save('my_numpy', n1)
+n1 = np.load('my_numpy.npy')
+print("n1.load(my_numpy.npy):", n1)
